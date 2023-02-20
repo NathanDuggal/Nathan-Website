@@ -6,17 +6,17 @@ body {
 .title {
     font-size: 48px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 
     /* Fallback: Set a background color. */
     background-color: red;
     
     /* Create the gradient. */
-    background-image: linear-gradient(0deg, red, blue);
+    background-image: linear-gradient(45deg, cyan, orange);
     
     /* Set the background size and repeat properties. */
     /* background-size: 400% 400%; */
-    background-size: 400%;
+    background-size: 400% 400%;
     background-repeat: repeat;
 
     /* Use the text as a mask for the background. */
@@ -26,18 +26,19 @@ body {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 
-    animation: swirl 5s infinite;
+    animation: swirl 3s infinite linear;
 }
+
 
 @keyframes swirl {
     0% {
-        background-position: 0% 0%;
+        background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 0%;
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 0%;
+        background-position: 0% 50%;
     }
 }
 
@@ -45,5 +46,8 @@ body {
     /* background-color: white; */
     height: 500px;
     aspect-ratio: 1; /* makes it a square */
-    background-image: radial-gradient(red, rgb(0,0,0,0))
+    background-image: linear-gradient(90deg, purple, orange);
+
+    background-size: 400% 400%;
+    animation: swirl 1s infinite;
 }
