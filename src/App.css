@@ -1,25 +1,31 @@
 .App-logo {
   /* height: 40vmin; */
-  height: 100px;
+  height: 8vw;
   pointer-events: none;
 }
 
 .main-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 60px;
-  margin: 30px 0px 30px 30px;
+  font-size: 8vw;
+  margin: 0px;
   display: inline-block;
 }
 
 .title-container {
   align-items: left;
   display: flex;
-  animation: 1s ease-out 0s 1 slideInLeft;
+  animation: 1s ease-out 0s 1 slideInTop;
+  column-span: all;
 }
 
 .body-container {
-  text-align: center;
-  align-items: center;
+  margin: 0px;
+}
+
+.text-box {
+  width: 100%;
+  align-items: left;
+  text-align: left;
 }
 
 #logo-wrapper{
@@ -45,7 +51,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
@@ -55,6 +61,29 @@
 
 .App-link {
   color: #61dafb;
+}
+
+@media screen and (min-width: 741px) {
+  .main-title {
+    font-size: 80px;
+  }
+  .body-container {
+    font-size: 32px;
+  }
+  .App-logo {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .main-title {
+    font-size: 10vw;
+  }
+  /* .body-container {
+    font-size: 40px;
+  } */
+  .App-logo {
+    height: 10vw;
+  }
 }
 
 @keyframes App-logo-spin {
@@ -69,6 +98,15 @@
 @keyframes slideInLeft {
   0% {
     transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
   }
   100% {
     transform: translateX(0);

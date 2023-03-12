@@ -13,9 +13,8 @@ code {
 }
 
 gradient-text {
-  /* font-size: 48px; */
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Golos Text', sans-serif;
 
   /* Fallback: Set a background color. */
   background-color: red;
@@ -45,12 +44,12 @@ gradient-text {
 
 @keyframes swirl {
   0% {
-      background-position: 0% 0%;
+    background-position: 0% 0%;
   }
   50% {
-      background-position: 100% 100%;
+    background-position: 100% 100%;
   }
   100% {
-      background-position: 0% 0%;
+    background-position: 0% 0%;
   }
 }
