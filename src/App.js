@@ -1,6 +1,17 @@
 import logo from './logo.svg';
+import me from './media/me.jpg'
 import './App.css';
 import React from 'react';
+import Item from './Item.js'
+
+const item1contents = {
+  title: 'About Me',
+  text: `I'm currently an undergrad at the Georgia Institute of Technology 
+        studying Computer Science with concentrations in Hardware and Simulation.
+        I also play clarinet in the campus orchestra and know a copious amount of bird-facts!`,
+  src: me
+}
+
 
 // functions cannot have state
 // function App() {
@@ -31,6 +42,12 @@ class App extends React.Component {
               <gradient-text>
                 Web-development extraordinaire. 
               </gradient-text>
+              <div className='body-text'>
+                This is my personal website and web-dev portfolio. Look at all the cool things I can do!
+              </div>
+              <Item contents={item1contents}></Item>
+              <Item contents={''}></Item>
+              <Item contents={''}></Item>
             </div>
           </div>
         </header>
