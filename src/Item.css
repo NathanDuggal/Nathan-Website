@@ -1,12 +1,14 @@
 .item-container {
     border-radius: 1vw;
-    background-color: hsla(0, 0%, 100%, 25%);
+    background-color:  hsla(0, 0%, 0%, 100%);
+    /* hsla(0, 0%, 100%, 25%) */
     color: white;
     margin-top: 30px;
     padding: 10px;
     max-width: 740px;
     display: inline-flex;
     justify-content: space-evenly;
+    transition: 0.5s;
 }
 
 .item-title {

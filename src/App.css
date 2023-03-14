@@ -42,6 +42,7 @@
   overflow:hidden;
   transition: 0.5s;
 }
+
 #logo-wrapper:hover {
   transform: scale(1.25);
 }
