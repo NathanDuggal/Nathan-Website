@@ -9,6 +9,7 @@
     display: inline-flex;
     justify-content: space-evenly;
     transition: 0.5s;
+    /* transition-delay: 1s; */
 }
 
 .item-title {

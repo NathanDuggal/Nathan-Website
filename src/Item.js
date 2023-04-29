@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 
 const defaultStyle = {
     transform: 'translateX(-10px)',
-    backgroundColor: 'hsla(0, 0%, 0%, 25%)'
+    backgroundColor: 'hsla(0, 0%, 0%, 25%)',
+    // transition: '0s'
 }
 
 export default function Item(props) {
@@ -12,13 +13,12 @@ export default function Item(props) {
     function animate(e) {
         let rect = e.target.getBoundingClientRect();
         console.log(rect.height);
-        let x = e.clientX - rect.width; //x position within the element.
-        let y = e.clientY - rect.height;
+        let x = e.clientX - window.innerWidth/2;
         setStyle({
-            transform: 'translate('+(x/100)+'px,'+(-y/100)+'px)',
-            // transform: 'translateY(40px)',
+            transform: 'translateX('+(x/500)+'vw)',
+            // transform: 'translateX(1vw)',
             backgroundColor: '',
-            transition: ''
+            transition: '0.1s'
         });
     }
 

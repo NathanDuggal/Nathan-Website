@@ -18,18 +18,20 @@ const item1contents = {
 class App extends React.Component {
   render() {
     return (
+      
       <div className="App">
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:wght@600&display=swap" rel="stylesheet"></link>
 
+        <div className='background-obj'></div>
+
         <header className="App-header">
-          <div className='inline-title'>
+          <div className='main-content'>
             <div className='title-container'>
               <p className='main-title'>Nathan Duggal</p>
               <div id="logo-wrapper">
                 <a
-                  className="App-link"
                   href="https://reactjs.org"
                   target="_blank"
                   rel="noopener noreferrer"
