@@ -28,25 +28,30 @@ class App extends React.Component {
 
         <header className="App-header">
           <div className='main-content'>
-            <div className='title-container'>
-              <p className='main-title'>Nathan Duggal</p>
-              <div id="logo-wrapper">
-                <a
-                  href="https://reactjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={logo} className="App-logo" alt="logo" />  
-                </a>
+            <div className='title-containter'>
+              <div className='title-and-logo'>
+                <p className='main-title'>Nathan Duggal</p>
+                <div id="logo-wrapper">
+                  <a
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={logo} className="App-logo" alt="logo" />  
+                  </a>
+                </div>
               </div>
+              <gradient-text>
+                <span>LinkedIn</span>
+                <span>GitHub</span>
+                <span>Resume</span>
+              </gradient-text>
             </div>
             <div className='body-container'>
-              <gradient-text>
-                Web-development extraordinaire. 
-              </gradient-text>
-              <div className='body-text'>
+              
+              {/* <div className='body-text'>
                 This is my personal website and web-dev portfolio. Look at all the cool things I can do!
-              </div>
+              </div> */}
               <Item contents={item1contents}></Item>
               <Item contents={''}></Item>
               <Item contents={''}></Item>
