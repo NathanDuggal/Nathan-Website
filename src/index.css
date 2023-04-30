@@ -20,11 +20,11 @@ gradient-text {
   background-color: rgba(0,0,0,0);
   
   /* Create the gradient. */
-  background-image: linear-gradient(to right, rgb(97, 219, 251) 50%, rgba(0,0,0,0) 50%);
+  background-image: linear-gradient(to right, rgba(0,0,0,0) 20%, rgb(97, 219, 251) 20% 60%,rgb(97, 219, 251) 60%, rgba(0,0,0,0) 90%,rgba(0,0,0,0) 90% 100%);
   
   /* Set the background size and repeat properties. */
 
-  background-size: 200%;
+  background-size: 400%;
   background-repeat: no-repeat;
 
   /* Use the text as a mask for the background. */
@@ -38,7 +38,7 @@ gradient-text {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 
-  animation: wipe 4s;
+  animation: wipe infinite 6s;
 }
 
 gradient-text-1 {
@@ -49,14 +49,13 @@ gradient-text-1 {
 
 @keyframes wipe {
   0% {
-    background-position: 100% 0%;
+    background-position: 0% 0%;
   }
-  50% {
-    background-position: 100% 0%;
+  80% {
+    background-position: 50% 0%;
   }
   100% {
-    /* background-position: 0% 0%; */
-    background-position: 0% 0%;
+    background-position: 150% 0%;
   }
 }
 

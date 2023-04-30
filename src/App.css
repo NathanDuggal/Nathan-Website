@@ -75,11 +75,14 @@
 .background-obj {
   background-color: red;
   filter: blur(20px);
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   left: 50vw;
-  top: 20vw;
+  top: 20vh;
   position: fixed;
+
+  animation: figureEight infinite 8s;
+  animation-timing-function: linear;
 }
 
 @media screen and (min-width: 741px) {
@@ -129,5 +132,44 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes figureEight {
+  0% {
+    left: 50vw;
+    top: 20vh;
+  }
+  12.5% {
+    left: 40vw;
+    top: 10vh;
+  }
+  25% {
+    left: 30vw;
+    top: 20vh;
+  }
+  37.5% {
+    left: 40vw;
+    top: 30vh;
+  }
+  50% {
+    left: 50vw;
+    top: 20vh;
+  }
+  62.5% {
+    left: 60vw;
+    top: 10vh;
+  }
+  75% {
+    left: 70vw;
+    top: 20vh;
+  }
+  87.5% {
+    left: 60vw;
+    top: 30vh;
+  }
+  100% {
+    left: 50vw;
+    top: 20vh;
   }
 }
