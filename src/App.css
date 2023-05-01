@@ -50,7 +50,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: spin infinite 20s linear;
   }
 }
 
@@ -82,7 +82,7 @@
   top: 20vh;
   position: fixed;
 
-  animation: App-logo-spin infinite 10s;
+  animation: spin infinite 15s;
   /* animation-timing-function: ease-in-out; */
   animation-timing-function: linear;
 }
@@ -110,7 +110,7 @@
   }
 }
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
