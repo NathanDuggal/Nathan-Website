@@ -13,20 +13,28 @@
 }
 
 .item-title {
+    color: rgb(97, 219, 251);
     font-size: 32px;
     font-family: 'Golos Text', sans-serif;
 }
 
+.item-image {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 @media screen and (min-width: 741px) {
     .item-image {
-      width: 200px;
-      height: auto;
+      /* width: 200px;
+      height: auto; */
+      height: 250px;
+      width: 40%;
     }
 }
 
 @media screen and (max-width: 740px) {
     .item-image {
-        width: 40%;
+        width: 30%;
         /* height: auto; */
         object-fit: contain;
     }

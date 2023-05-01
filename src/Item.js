@@ -22,16 +22,32 @@ export default function Item(props) {
         });
     }
 
-    return (
-        <div onMouseMove={(e) => {animate(e)}} onMouseLeave={(e) => {setStyle(defaultStyle)}} style={style} className='item-container'>
-        {/* <div onMouseLeave={onMouseEnter={update} style={style} className='item-container'> */}
-            <div className='text-column'>
-                <div className='item-title'>
-                    {props.contents.title}
+    // TODO: MAKE THIS LEFTALIGN ACTUALLY WORK
+    if (props.leftAlign) {
+        return (
+            <div onMouseMove={(e) => {animate(e)}} onMouseLeave={(e) => {setStyle(defaultStyle)}} style={style} className='item-container'>
+            {/* <div onMouseLeave={onMouseEnter={update} style={style} className='item-container'> */}
+                <div className='text-column'>
+                    <div className='item-title'>
+                        {props.contents.title}
+                    </div>
+                    {props.contents.text}
                 </div>
-                {props.contents.text}
+                <img className='item-image' src={props.contents.src} alt="img"></img>
             </div>
-            <img className='item-image' src={props.contents.src} alt="img"></img>
-        </div>
-    );
+        );
+    } else {
+        return (
+            <div onMouseMove={(e) => {animate(e)}} onMouseLeave={(e) => {setStyle(defaultStyle)}} style={style} className='item-container'>
+            {/* <div onMouseLeave={onMouseEnter={update} style={style} className='item-container'> */}
+                <img className='item-image' src={props.contents.src} alt="img"></img>
+                <div className='text-column'>
+                    <div className='item-title'>
+                        {props.contents.title}
+                    </div>
+                    {props.contents.text}
+                </div>
+            </div>
+        );
+    }
 }

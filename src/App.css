@@ -74,7 +74,7 @@
 }
 
 .background-obj {
-  background: linear-gradient(to left, cyan 50%, yellow 50%);
+  background: linear-gradient(to left, cyan 50%, purple 50%);
   filter: blur(15vw);
   width: 20vw;
   height: 20vw;
@@ -82,8 +82,9 @@
   top: 20vh;
   position: fixed;
 
-  /* animation: pulseWidth infinite 10s; */
-  animation-timing-function: ease-in-out;
+  animation: App-logo-spin infinite 10s;
+  /* animation-timing-function: ease-in-out; */
+  animation-timing-function: linear;
 }
 
 @media screen and (min-width: 741px) {
