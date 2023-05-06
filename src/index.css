@@ -45,7 +45,7 @@ gradient-text {
   animation-timing-function: ease-out;
 }
 
-gradient-text span {
+gradient-text a {
   display: table-cell;
   /* width: 100%; */
 }
