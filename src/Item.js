@@ -13,10 +13,10 @@ export default function Item(props) {
     function animate(e) {
         // let rect = e.target.getBoundingClientRect();
         // let x = e.clientX - rect.width/2;
-        let x = e.clientX - window.innerWidth/2;
+        // let x = e.clientX - window.innerWidth/2;
         setStyle({
-            transform: 'translateX('+(x/500)+'vw)',
-            // transform: 'translateX(0.5vw)',
+            // transform: 'translateX('+(x/500)+'vw)',
+            transform: 'translateX(0.5vw)',
             backgroundColor: '',
             transition: '0.1s'
         });

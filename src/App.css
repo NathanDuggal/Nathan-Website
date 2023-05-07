@@ -15,7 +15,7 @@
 .title-and-logo {
   align-items: left;
   display: flex;
-  animation: 1s ease-out 0s 1 slideInTop;
+  /* animation: 1s ease-out 0s 1 slideInTop; */
   column-span: all;
 }
 
@@ -75,7 +75,7 @@
 
 .background-obj {
   background: linear-gradient(to left, cyan 50%, purple 50%);
-  filter: blur(15vw);
+  filter: blur(10vw);
   width: 20vw;
   height: 20vw;
   left: 40vw;
@@ -91,13 +91,17 @@
   .main-title {
     font-size: 80px;
   }
-  .body-container {
-    font-size: 24px;
-  }
   .App-logo {
     height: 80px;
   }
+  gradient-text {
+    font-size: 32px;
+  }
+  .body-container {
+    font-size: 24px;
+  }
 }
+
 @media screen and (max-width: 740px) {
   .main-title {
     font-size: 10vw;
@@ -105,10 +109,19 @@
   /* .body-container {
     font-size: 40px;
   } */
+  gradient-text {
+    font-size: 4vw;
+  }
   .App-logo {
     height: 10vw;
   }
 }
+
+/* @media screen and (width < height) {
+  .main-title {
+    font-size: 2vw;
+  }
+} */
 
 @keyframes spin {
   from {

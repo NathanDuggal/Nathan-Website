@@ -4,12 +4,13 @@ import lasar from './media/demo_gif.gif';
 import './App.css';
 import React from 'react';
 import Item from './Item.js';
+import HeaderBar from './HeaderBar.js'
 
 const aboutMeContents = {
   title: 'About Me',
-  text: `I'm currently an undergrad at the Georgia Institute of Technology 
-        studying Computer Science, and my primary areas of interest are robotics and data-visulaization.
-        I also really like music, play in the campus orchestra, and can tell you all about birds!`,
+  text: `I'm currently an undergrad at Georgia Tech studying Computer Science, and my primary areas 
+        of interest are robotics and data-visulaization. I also really enjoy listening to music, performing
+        with the campus orchestra, and indenitfying birds!`,
   // leftsrc: [me]
   leftsrc: me
 }
@@ -54,42 +55,16 @@ class App extends React.Component {
                 </div>
               </div>
               {/* TODO: FIGURE OUT WHAT WILL BE BEST HERE */}
-              <gradient-text>
-                <a
-                  href="https://www.linkedin.com/in/nathan-duggal/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {/* <span>LinkedIn 🔗</span> */}
-                  LinkedIn 🔗
-                </a>
-                <a
-                  href="https://github.com/NathanDuggal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {/* <span>GitHub 🖳</span> */}
-                  GitHub 🖳
-                </a>
-                <a
-                  href="https://docs.google.com/document/d/1T9fzq1zK2DYT1WOXZZMmOunchzCJGvzSPhRwzm0OHQA/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {/* <span>Resume 🔧</span> */}
-                  Resume 🔧
-                </a>
-                {/* Web-development extraordinaire.  */}
-              </gradient-text>
+              <HeaderBar></HeaderBar>
             </div>
             <div className='body-container'>
               
               {/* <div className='body-text'>
                 This is my personal website and web-dev portfolio. Look at all the cool things I can do!
               </div> */}
-              <Item contents={aboutMeContents} leftAlign={true}></Item>
-              <Item contents={projectsContents} leftAlign={false} ></Item>
-              <Item contents={''} leftAlign={true}></Item>
+              <Item contents={aboutMeContents}></Item>
+              <Item contents={projectsContents}></Item>
+              <Item contents={''}></Item>
             </div>
           </div>
         </header>

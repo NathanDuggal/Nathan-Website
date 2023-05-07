@@ -1,0 +1,78 @@
+.gradient-text {
+    /* font-size: 32px; */
+    font-family: 'Golos Text', sans-serif;
+    display: table;
+    width: 75%;
+    margin: 0px;
+    margin-left: 2vw;
+  
+    /* Fallback: Set a background color. */
+    background-color: rgba(0,0,0,0);
+    
+    /* Create the gradient. */
+    /* background-image: linear-gradient(to right, rgba(0,0,0,0) 20%, rgb(97, 219, 251) 20% 40%,yellow 60%, rgba(0,0,0,0) 95%); */
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 25%, rgb(97, 219, 251) 25% 50%,yellow 60%, rgb(97, 219, 251) 65% 100%);
+    
+    /* Set the background size and repeat properties. */
+  
+    background-size: 450%;
+    background-repeat: no-repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white; */
+  
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  
+    animation: wipe 3s;
+    animation-timing-function: ease-out;
+}
+  
+.gradient-text a {
+    display: table-cell;
+    /* width: 100%; */
+}
+
+@media screen and (min-width: 741px) {
+    .gradient-text {
+      font-size: 32px;
+    }
+}
+  
+@media screen and (max-width: 740px) {
+    .gradient-text {
+      font-size: 4vw;
+    }
+}
+
+@keyframes wipe {
+  0% {
+    background-position: 0% 0%;
+  }
+  30% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 35% 0%;
+  }
+  /* 100% {
+    background-position: 150% 0%;
+  } */
+}
+
+@keyframes colorchange {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: cyan;
+  }
+  100% {
+    color: yellow;
+  }
+}
