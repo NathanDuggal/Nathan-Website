@@ -46,32 +46,34 @@ export default function Item(props) {
     }
 
     return (
-        <div onMouseMove={(e) => {animate(e)}} onMouseLeave={(e) => {setStyle(defaultStyle)}} style={style} className='gradient-text'>
-            <a
-                href="https://www.linkedin.com/in/nathan-duggal/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                {/* <span>LinkedIn 🔗</span> */}
-                🔗 LinkedIn 
-            </a>
-            <a
-                href="https://github.com/NathanDuggal"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                {/* <span>GitHub 🖳</span> */}
-                🖳 GitHub
-            </a>
-            <a
-                href="https://docs.google.com/document/d/1T9fzq1zK2DYT1WOXZZMmOunchzCJGvzSPhRwzm0OHQA/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                {/* <span>Resume 🔧</span> */}
-                🔧 Resume
-            </a>
-            {/* Web-development extraordinaire.  */}
-      </div>
+        <div className='header-space'>
+            <div onMouseMove={(e) => {animate(e)}} onMouseLeave={(e) => {setStyle(defaultStyle)}} style={style} className='gradient-text'>
+                <a
+                    href="https://www.linkedin.com/in/nathan-duggal/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {/* <span>LinkedIn 🔗</span> */}
+                    🔗 LinkedIn 
+                </a>
+                <a
+                    href="https://github.com/NathanDuggal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {/* <span>GitHub 🖳</span> */}
+                    🖳 GitHub
+                </a>
+                <a
+                    href="https://docs.google.com/document/d/1T9fzq1zK2DYT1WOXZZMmOunchzCJGvzSPhRwzm0OHQA/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {/* <span>Resume 🔧</span> */}
+                    🔧 Resume
+                </a>
+                {/* Web-development extraordinaire.  */}
+            </div>
+        </div>
     );
 }

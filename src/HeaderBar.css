@@ -38,6 +38,10 @@
     /* width: 100%; */
 }
 
+.header-space {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 741px) {
     .gradient-text {
       font-size: 32px;
