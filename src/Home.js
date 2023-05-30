@@ -4,7 +4,6 @@ import './App.css';
 import React from 'react';
 import Item from './Item.js';
 import HeaderBar from './HeaderBar.js'
-import { Outlet, Link } from "react-router-dom";    
 
 const aboutMeContents = {
   title: 'About Me',
