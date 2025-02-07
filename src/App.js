@@ -10,8 +10,8 @@ class App extends React.Component {
     return (
       <BrowserRouter  basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path="about" element={<AboutMe />} />
+          <Route index element={<Home />} />
+          <Route exact path="/about" element={<AboutMe />} />
         </Routes>
       </BrowserRouter>
     );
