@@ -12,6 +12,14 @@
   display: inline-block;
 }
 
+.title-icon {
+  font-family: monospace, monospace;
+  /* font-weight: bold; */
+  color: rgb(97, 219, 251);
+  margin-left: 0px;
+}
+
+
 .title-and-logo {
   align-items: left;
   display: flex;
@@ -91,6 +99,9 @@
   .main-title {
     font-size: 80px;
   }
+  /* .title-icon {
+    font-size: 60px;
+  } */
   .App-logo {
     height: 80px;
   }
@@ -106,6 +117,9 @@
   .main-title {
     font-size: 10vw;
   }
+  /* .title-icon {
+    font-size: 10vw;
+  } */
   /* .body-container {
     font-size: 40px;
   } */

@@ -21,7 +21,7 @@ class AboutMe extends React.Component {
             <div className='title-containter'>
               <div className='title-and-logo'>
                 <p className='main-title'>About Me</p>
-                <div id="logo-wrapper">
+                {/* <div id="logo-wrapper">
                   <a
                     href="https://reactjs.org"
                     target="_blank"
@@ -29,7 +29,7 @@ class AboutMe extends React.Component {
                   >
                     <img src={logo} className="App-logo" alt="logo" />  
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className='body-container'>

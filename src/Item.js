@@ -1,5 +1,6 @@
 import './Item.css';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
 
 const defaultStyle = {
     transform: 'translateX(-10px)',
@@ -9,6 +10,7 @@ const defaultStyle = {
 
 export default function Item(props) {
     const [style, setStyle] = useState(defaultStyle);
+    const navigate = useNavigate();
 
     function animate(e) {
         // let rect = e.target.getBoundingClientRect();
@@ -26,7 +28,8 @@ export default function Item(props) {
     return (
         <div className='item-space'>
             <a
-                href={props.contents.link}
+                // href={process.env.PUBLIC_URL + props.contents.link}
+                onClick={() => navigate(props.contents.link)}
                 // target="_blank"
                 rel="noopener noreferrer"
             >

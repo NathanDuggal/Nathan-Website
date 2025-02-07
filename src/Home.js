@@ -59,14 +59,18 @@ class Home extends React.Component {
           <div className='main-content'>
             <div className='title-containter'>
               <div className='title-and-logo'>
-                <p className='main-title'>Nathan Duggal</p>
+                <p className='main-title'>Nathan Duggal</p> 
+                
                 <div id="logo-wrapper">
-                  <a
+                  {/* <a
                     href="https://reactjs.org"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img src={logo} className="App-logo" alt="logo" />  
+                  </a> */}
+                  <a href="https://github.com/NathanDuggal/Nathan-Website">
+                    <p className='main-title title-icon'>:~/</p>
                   </a>
                 </div>
               </div>

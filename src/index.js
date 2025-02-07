@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './Home';
 import reportWebVitals from './reportWebVitals';
+import { Route, Routes, HashRouter } from 'react-router-dom';
+import AboutMe from './AboutMe';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<AboutMe />} />
+          {/* <Route path="*" element={<NotFoundPage />} /> */}
+      </Routes>
+    </HashRouter>
   </React.StrictMode>
 );
 
