@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Nathan-Website/static/css/main.e602c587.css",
+    "main.js": "/Nathan-Website/static/js/main.ce23ede6.js",
+    "static/js/787.fe9ec6bb.chunk.js": "/Nathan-Website/static/js/787.fe9ec6bb.chunk.js",
+    "static/media/demo_gif.gif": "/Nathan-Website/static/media/demo_gif.81505b605cf654f98e6e.gif",
+    "static/media/samsara.gif": "/Nathan-Website/static/media/samsara.7e21a981110784e40489.gif",
+    "static/media/me.jpg": "/Nathan-Website/static/media/me.dade4e7ff91d47e5f6cf.jpg",
+    "static/media/meta.png": "/Nathan-Website/static/media/meta.b72aa9440c6197d275d4.png",
+    "static/media/solar.jpg": "/Nathan-Website/static/media/solar.8d1de1bc47a6c793d631.jpg",
+    "static/media/logo.svg": "/Nathan-Website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Nathan-Website/index.html",
+    "main.e602c587.css.map": "/Nathan-Website/static/css/main.e602c587.css.map",
+    "main.ce23ede6.js.map": "/Nathan-Website/static/js/main.ce23ede6.js.map",
+    "787.fe9ec6bb.chunk.js.map": "/Nathan-Website/static/js/787.fe9ec6bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e602c587.css",
+    "static/js/main.ce23ede6.js"
+  ]
+}
