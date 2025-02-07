@@ -5,6 +5,7 @@ import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import { Route, Routes, HashRouter } from 'react-router-dom';
 import AboutMe from './AboutMe';
+import Projects from './Projects';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<AboutMe />} />
-          {/* <Route path="*" element={<NotFoundPage />} /> */}
+          <Route exact path="/projects" element={<Projects />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

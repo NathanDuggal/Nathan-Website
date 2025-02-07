@@ -29,7 +29,13 @@ export default function Item(props) {
         <div className='item-space'>
             <a
                 // href={process.env.PUBLIC_URL + props.contents.link}
-                onClick={() => navigate(props.contents.link)}
+                onClick={() => {
+                    if (props.contents.link.includes('http')) {
+                        window.open(props.contents.link)
+                    } else {
+                        navigate(props.contents.link)
+                    }
+                }}
                 // target="_blank"
                 rel="noopener noreferrer"
             >
@@ -40,6 +46,11 @@ export default function Item(props) {
                             return <img className='item-image' src={src} alt=""></img>
                         })}
                     </div> */}
+                    {/* {props.contents.rightsrc && 
+                        <div className='img-column'>
+                            <img className='item-image' src={props.contents.rightsrc} alt="img"></img> 
+                        </div>
+                    } */}
                     {props.contents.rightsrc && <img className='item-image' src={props.contents.rightsrc} alt="img"></img> }
                     <div className='text-column'>
                         <div className='item-title'>
