@@ -37,15 +37,15 @@ class AboutMe extends React.Component {
               <div className='body-text'>
                 I have had a passion for musical performance for a long time, in which I have picked up
                 many instruments. My primary instrument nowadays is the clarinet, which I play for the Georgia
-                Tech orchestra, but I have more recently been learning ukelele just for fun!
+                Tech orchestra, but I have more recently been learning ukulele just for fun!
                 <br/> <br/>
-                Another intreest of mine has been watching and identifying birds. Birds never cease to amaze
+                Another intrest of mine has been watching and identifying birds. Birds never cease to amaze
                 me with their incredible variety in both appearance and behavior, so over time I have learned about
                 many distinguishing patterns and bonded with others over birdwatching.
                 <br/> <br/>
                 I have also enjoyed photography over the years. What started as documenting birds using my Dad's
-                camera eventually to me exploring several other styles. While my main subject remains wildlife, I also
-                have dabbled in landscapes, portraits, and astrophotography. 
+                camera eventually to me exploring several other styles. While my main subject remains wildlife, I continue
+                to learn about landscapes, portraits, and astrophotography. 
               </div>
               {/* <Item contents={aboutMeContents}></Item> */}
             </div>
