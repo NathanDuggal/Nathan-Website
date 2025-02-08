@@ -6,11 +6,14 @@ import meta from './meta.png'
 import samsara from './samsara.gif'
 import hum from './hum.png'
 import owl from './owl.jpg'
+import staryeast from './staryeast.png'
+import graphics from './graphics.gif'
 
 const aboutMeContents = {
   title: 'About Me',
-  text: `I'm currently an undergrad at Georgia Tech studying Computer Science, and my primary areas 
-        of interest are robotics and data-visulaization. I also really enjoy listening to music, performing
+  text: `I'm currently an undergrad at Georgia Tech studying Computer Science. My primary areas 
+        of interest are computer architecture and embedded systems, but I have experience with a
+        wide range of fields. I also love listening to music, performing
         with the campus orchestra, and indenitfying birds!`,
   link: "/about",
   leftsrc: me
@@ -18,11 +21,10 @@ const aboutMeContents = {
 
 const projectsContents = {
   title: 'Projects',
-  text: `Check out some of the projects I've worked on! 
-        I have experience with web, desktop, and database development, and my projects range from 
-        data-driven web-apps to augmented reality motion-capture.`,
+  text: `Check out some of the projects I've worked on! I've been to many hackathons, worked with several
+        campus organizations, and I'm always looking for new opportunities to apply and develop my skills.`,
   link: "/projects",
-  rightsrc: lasar
+  rightsrc: graphics
 }
 
 const experienceContents = {
@@ -46,8 +48,7 @@ const lasarContents = {
     title: 'LasAR Tag',
     text: `LasAR Tag is an augmented reality motion-capture system that uses a camera, an aruco tag,
         and any red object to provide an experience similar to that of regular laser tag. This project
-        was designed to bring the fun and entertainment of laser tag to the comfort of your own home.`,
-
+        was designed to bring the fun and excitement of laser tag to the comfort of your own home.`,
     tag: "Winner of ImmserseGT 2023",
     link: "https://github.com/NathanDuggal/ImmerseGT-LasARTag",
     leftsrc: lasar
@@ -55,13 +56,16 @@ const lasarContents = {
 
 const staryeastContents = {
     title: 'Staryeast',
-    text: ``,
+    text: `Staryeast is a webapp which uses a custom machine-learning model to identify songs which fit
+        the mood of a user's surroundings, including weather, location, and time of day. Trained on 5 
+        years of Google Trends data, and with over 1 million songs, Staryeast is a great way to discover
+        new music and set the mood for any occasion.`,
     tag: "Winner of Hacklytics 2023",
     link: "https://github.com/NathanDuggal/Hacklytics2023-staryeast",
-    leftsrc: lasar
+    leftsrc: staryeast
 }
 
-export {me, lasar, rj, solar, meta, samsara, hum, owl,
+export {me, lasar, rj, solar, meta, samsara, hum, owl, graphics,
         aboutMeContents, projectsContents, experienceContents, academicsContents,
         lasarContents, staryeastContents}
 

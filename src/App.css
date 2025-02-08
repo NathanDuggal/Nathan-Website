@@ -48,7 +48,7 @@
 
 .body-text {
   margin-top: 30px;
-  max-width: 740px;
+  max-width: 800px;
 }
 
 .right-aligned {
@@ -108,7 +108,7 @@
   animation-timing-function: linear;
 }
 
-@media screen and (min-width: 741px) {
+@media screen and (min-width: 960px) {
   .main-title {
     font-size: 80px;
   }
@@ -126,7 +126,7 @@
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 959px) {
   .main-title {
     font-size: 10vw;
   }

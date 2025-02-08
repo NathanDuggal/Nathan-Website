@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Item from './Item.js';
-import { lasarContents } from './media'
+import { lasarContents, staryeastContents } from './media'
 
 // functions cannot have state
 // function App() {
@@ -29,7 +29,7 @@ class Projects extends React.Component {
             </div>
             <div className='body-container'>
                 <Item contents={lasarContents}></Item>
-                {/* <Item contents={projectsContents}></Item> */}
+                <Item contents={staryeastContents}></Item>
             </div>
           </div>
         </header>
