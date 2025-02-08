@@ -3,13 +3,13 @@ import './App.css';
 import React from 'react';
 import Item from './Item.js';
 import { lasarContents, staryeastContents } from './media'
+import { useNavigate } from 'react-router-dom'
 
-// functions cannot have state
-// function App() {
-class Projects extends React.Component {
-  render() {
+
+export default function Projects(props) {
+
+  const navigate = useNavigate();
     return (
-      
       <div className="App">
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
@@ -21,7 +21,7 @@ class Projects extends React.Component {
           <div className='main-content'>
             <div className='title-containter'>
               <div className='title-and-logo'>
-                <div id="logo-wrapper" onClick={() => window.location.href = "/"}>
+                <div id="logo-wrapper" onClick={() => navigate('/')}>
                   <p className='main-title title-icon'>~/</p>
                 </div>
                 <p className='main-title'>Projects</p>
@@ -34,8 +34,5 @@ class Projects extends React.Component {
           </div>
         </header>
       </div>
-    );
-  }
+  );
 }
-
-export default Projects;

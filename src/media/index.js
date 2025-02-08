@@ -14,7 +14,7 @@ const aboutMeContents = {
   text: `I'm currently an undergrad at Georgia Tech studying Computer Science. My primary areas 
         of interest are computer architecture and embedded systems, but I have experience with a
         wide range of fields. I also love listening to music, performing
-        with the campus orchestra, and indenitfying birds!`,
+        with the campus orchestra, and identifying  birds!`,
   link: "/about",
   leftsrc: me
 }
@@ -49,7 +49,7 @@ const lasarContents = {
     text: `LasAR Tag is an augmented reality motion-capture system that uses a camera, an aruco tag,
         and any red object to provide an experience similar to that of regular laser tag. This project
         was designed to bring the fun and excitement of laser tag to the comfort of your own home.`,
-    tag: "Winner of ImmserseGT 2023",
+    tag: "Winner of ImmerseGT 2023",
     link: "https://github.com/NathanDuggal/ImmerseGT-LasARTag",
     leftsrc: lasar
 }
