@@ -2,26 +2,59 @@ import './Item.css';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 
-const defaultStyle = {
-    transform: 'translateX(-10px)',
-    backgroundColor: 'hsla(0, 0%, 0%, 25%)',
-    // transition: '0s'
-}
 
 export default function Item(props) {
-    const [style, setStyle] = useState(defaultStyle);
+
+    console.log(props.contents.hidetext);
+
+    const defaultBoxStyle = {
+        transform: 'translateX(-10px)',
+        backgroundColor: 'hsla(0, 0%, 0%, 25%)',
+    }
+    const hoverBoxStyle = {
+        // transform: 'translateX('+(x/500)+'vw)',
+        transform: 'translateX(0.5vw)',
+        backgroundColor: '',
+        transition: '0.1s'
+    }
+
+    const defaultTitleStyle = {
+        textAlign: 'center',
+        animation: `subtleColorChange 5s infinite`, 
+        animationDelay: `${props.contents.colorchange}s`,
+        transition: '0.3s'
+    }
+    const hoverTitleStyle = {
+        fontSize: 32,
+        margin: '0 0 0 0',
+        transition: '0.1s'
+    }
+    
+    const defaultTextStyle = {
+        fontSize: 0,
+        transition: '0.3s'
+    }
+    const hoverTextStyle = {
+        fontSize: 24,
+        display: 'block',
+        transition: '0.2s'
+    }
+
+    const [boxStyle, setBoxStyle] = useState(defaultBoxStyle);
+    const [titleStyle, setTitleStyle] = useState(defaultTitleStyle);
+    const [textStyle, setTextStyle] = useState(defaultTextStyle);
     const navigate = useNavigate();
 
     function animate(e) {
-        // let rect = e.target.getBoundingClientRect();
-        // let x = e.clientX - rect.width/2;
-        // let x = e.clientX - window.innerWidth/2;
-        setStyle({
-            // transform: 'translateX('+(x/500)+'vw)',
-            transform: 'translateX(0.5vw)',
-            backgroundColor: '',
-            transition: '0.1s'
-        });
+        setBoxStyle(hoverBoxStyle);
+        setTitleStyle(hoverTitleStyle);
+        setTextStyle(hoverTextStyle);
+    }
+
+    function reset(e) {
+        setBoxStyle(defaultBoxStyle);
+        setTextStyle(defaultTextStyle);
+        setTitleStyle(defaultTitleStyle);
     }
 
     // TODO: MAKE THIS LEFTALIGN ACTUALLY WORK
@@ -39,30 +72,16 @@ export default function Item(props) {
                 // target="_blank"
                 rel="noopener noreferrer"
             >
-                <div onMouseEnter={(e) => {animate(e)}} onMouseLeave={(e) => {setStyle(defaultStyle)}} style={style} className='item-container'>
-                {/* <div onMouseLeave={onMouseEnter={update} style={style} className='item-container'> */}
-                    {/* <div className='img-column'>
-                        {props.contents.rightsrc?.map(src => {
-                            return <img className='item-image' src={src} alt=""></img>
-                        })}
-                    </div> */}
-                    {/* {props.contents.rightsrc && 
-                        <div className='img-column'>
-                            <img className='item-image' src={props.contents.rightsrc} alt="img"></img> 
-                        </div>
-                    } */}
+                <div onMouseEnter={(e) => {animate(e)}} onMouseLeave={(e) => {reset(e)}} style={boxStyle} className='item-container'>
                     {props.contents.rightsrc && <img className='item-image' src={props.contents.rightsrc} alt="img"></img> }
-                    <div className='text-column'>
-                        <div className='item-title'>
+                    <span className='text-column'>
+                        <div style={props.contents.hidetext ? titleStyle : hoverTitleStyle} className='item-title'>
                             {props.contents.title}
                         </div>
-                        {props.contents.text}
-                    </div>
-                    {/* <div className='img-column'>
-                        {props.contents.leftsrc?.map(src => {
-                            return <img className='item-image' src={src} alt=""></img>
-                        })}
-                    </div> */}
+                        <div style={props.contents.hidetext ? textStyle : hoverTextStyle} className='item-text'>
+                            {props.contents.text}
+                        </div>
+                    </span>
                     {props.contents.leftsrc && <img className='item-image' src={props.contents.leftsrc} alt="img"></img> }
                 </div>
             </a>

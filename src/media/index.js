@@ -16,7 +16,9 @@ const aboutMeContents = {
         wide range of fields. I also love listening to music, performing
         with the campus orchestra, and identifying  birds!`,
   link: "/about",
-  leftsrc: me
+  leftsrc: me,
+  colorchange: '3',
+  hidetext: false
 }
 
 const projectsContents = {
@@ -24,7 +26,9 @@ const projectsContents = {
   text: `Check out some of the projects I've worked on! I've been to many hackathons, worked with several
         campus organizations, and I'm always looking for new opportunities to apply and develop my skills.`,
   link: "/projects",
-  rightsrc: graphics
+  rightsrc: graphics,
+  colorchange: '4',
+  hidetext: false
 }
 
 const experienceContents = {
@@ -32,7 +36,8 @@ const experienceContents = {
   text: `I always am looking to gain more industry experience, and right now I am exploring
         several different fields. `,
   link: "https://github.com/NathanDuggal",
-  leftsrc: samsara
+  leftsrc: samsara,
+  hidetext: false
 }
 
 const academicsContents = {
@@ -41,7 +46,8 @@ const academicsContents = {
         I've worked on. In addition to learning new technical skills, I have gained leadership
         experience and have been introduced to many project-management techniques.`,
   link: "https://github.com/NathanDuggal",
-  rightsrc: rj
+  rightsrc: rj,
+  hidetext: false
 }
 
 const lasarContents = {
@@ -51,7 +57,9 @@ const lasarContents = {
         was designed to bring the fun and excitement of laser tag to the comfort of your own home.`,
     tag: "Winner of ImmerseGT 2023",
     link: "https://github.com/NathanDuggal/ImmerseGT-LasARTag",
-    leftsrc: lasar
+    rightsrc: lasar,
+    // colorchange: '3',
+    hidetext: true
 }
 
 const staryeastContents = {
@@ -62,7 +70,9 @@ const staryeastContents = {
         new music and set the mood for any occasion.`,
     tag: "Winner of Hacklytics 2023",
     link: "https://github.com/NathanDuggal/Hacklytics2023-staryeast",
-    leftsrc: staryeast
+    leftsrc: staryeast,
+    // colorchange: '4',
+    hidetext: true
 }
 
 export {me, lasar, rj, solar, meta, samsara, hum, owl, graphics,

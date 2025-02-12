@@ -27,14 +27,9 @@ class Home extends React.Component {
                   </a>
                 </div>
               </div>
-              {/* TODO: FIGURE OUT WHAT WILL BE BEST HERE */}
               <HeaderBar></HeaderBar>
             </div>
             <div className='body-container'>
-              
-              {/* <div className='body-text'>
-                This is my personal website and web-dev portfolio. Look at all the cool things I can do!
-              </div> */}
               <Item contents={aboutMeContents}></Item>
               <Item contents={projectsContents}></Item>
               {/* <Item contents={experienceContents}></Item> */}

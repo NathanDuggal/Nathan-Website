@@ -13,7 +13,7 @@ export default function Item(props) {
   
     useEffect(() => {
         // set initial value
-        const mediaWatcher = window.matchMedia("(min-width: 741px)")
+        const mediaWatcher = window.matchMedia("(min-width: 961px)")
         setLockSize(mediaWatcher.matches);
 
         //watch for updates
@@ -34,13 +34,13 @@ export default function Item(props) {
         if (lockSize) { // If media query matches
             let x = e.clientX - window.innerWidth/2;
             setStyle({
-                backgroundPosition: ''+(x-1175)+'px'
+                backgroundPosition: ''+(x-1290)+'px'
             });
           } else {
             let x = 100*(e.clientX - window.innerWidth/2)/window.innerWidth // x in vw
             console.log(x);
             setStyle({
-                backgroundPosition: ''+(x - 150)+'vw'
+                backgroundPosition: ''+(x - 191)+'vw'
             });
         }
     }

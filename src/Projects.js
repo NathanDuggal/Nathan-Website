@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Item from './Item.js';
+import HeaderBar from './HeaderBar.js'
 import { lasarContents, staryeastContents } from './media'
 import { useNavigate } from 'react-router-dom'
 
@@ -26,10 +26,11 @@ export default function Projects(props) {
                 </div>
                 <p className='main-title'>Projects</p>
               </div>
+              <HeaderBar></HeaderBar>
             </div>
             <div className='body-container'>
-                <Item contents={lasarContents}></Item>
-                <Item contents={staryeastContents}></Item>
+              <Item contents={lasarContents}></Item>
+              <Item contents={staryeastContents}></Item>
             </div>
           </div>
         </header>

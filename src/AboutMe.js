@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import HeaderBar from './HeaderBar.js'
 import { useNavigate } from 'react-router-dom'
 import { hum, owl } from './media' 
 
@@ -26,6 +27,7 @@ export default function Projects(props) {
               </div>
               <p className='main-title'>About Me</p>
             </div>
+            <HeaderBar></HeaderBar>
           </div>
           <div className='body-container'>
             
@@ -40,7 +42,7 @@ export default function Projects(props) {
               many distinguishing patterns and bonded with others over birdwatching.
               <div className='page-image-container'>
                 <img className='page-image' src={hum}></img>
-                <img className='page-image' src={owl}></img>
+                {/* <img className='page-image' src={owl}></img> */}
               </div>
               <br/>
               I have also enjoyed photography over the years. What started as documenting birds using my Dad's
